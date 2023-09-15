@@ -1,0 +1,24 @@
+<div class="container">
+      <div class="header-container">
+            <h2>Acesso ao Crud</h2>
+      </div>
+      <form (ngSubmit)="submit()" [formGroup]="formLogin" #formDir="ngForm">
+            
+            <div class="content-form">
+                  <div class="label-field">
+                        <label>Login:</label>
+                        <label>Senha:</label>
+                  </div>
+                  <div class="input-field">
+                        <input type="text" formControlName="login" placeholder="Login">
+                        <input type="password" formControlName="password" placeholder="Password">
+                  </div>
+            </div>
+            
+            
+            <div class="submit-field">
+                  <button type="submit">Enviar</button>
+            </div>
+      </form>
+</div>
+<app-message-view></app-message-view>
